@@ -2,94 +2,78 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  background-color: #434242;
 }
 
-.signin-container {
+.signup-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #434242;
 }
 
-.signin-box {
+.signup-box {
   display: flex;
-  width: 90%;
+  width: 80%;
   max-width: 900px;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 4px 10px rgb(0, 0, 0);
   overflow: hidden;
-  flex-direction: row;
 }
 
-.signin-left {
+.signup-left {
   background-color: #090446;
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
+  padding: 20px;
 }
 
-.signin-avatar {
-  width: 100%;
+.signup-avatar {
+  width: 85%;
   height: auto;
-  object-fit: cover;
 }
 
-.signin-right {
+.signup-right {
   padding: 40px;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.signin-title {
-  font-size: 2rem;
+.signup-title {
+  font-size: 24px;
   font-weight: bold;
   color: #090446;
   margin: 0;
 }
 
-.signin-subtitle {
+.signup-subtitle {
   color: #090446;
   margin-top: 1%;
 }
 
-.signin-form {
+.signup-form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.signin-input {
-  padding: 12px;
+.signup-input {
+  padding: 10px;
   border-radius: 10px;
   border: 1px solid #949191;
   font-size: 16px;
   background-color: rgb(188, 182, 182);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.signin-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.forgot-password {
-  color: #090446;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.signin-button {
+.signup-button {
   padding: 12px;
   background-color: red;
   color: orange;
@@ -101,119 +85,92 @@ body {
   cursor: pointer;
 }
 
-.signin-acc {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.signin-or-login {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.signin-or-login p {
-  font-weight: bold;
-  color: #090446;
-  margin-bottom: 10px;
-}
-
-.signin-social-icons {
+.signup-acc {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  margin-top: 20px;
 }
 
-.social-icon {
-  font-size: 24px;
+.signup-log {
+  color: #090446;
+  text-decoration: underline;
   cursor: pointer;
-  transition: color 0.3s;
-}
-
-.social-icon:hover {
-  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
-  .signin-box {
+  .signup-box {
     flex-direction: column;
     width: 100%;
     max-width: none;
   }
 
-  .signin-left {
+  .signup-left {
     width: 100%;
     border-radius: 0;
     padding: 15px;
   }
 
-  .signin-avatar {
+  .signup-avatar {
     width: 70%;
   }
 
-  .signin-right {
+  .signup-right {
     width: 100%;
     padding: 20px;
   }
 
-  .signin-title {
+  .signup-title {
     font-size: 1.5rem;
   }
 
-  .signin-subtitle {
+  .signup-subtitle {
     font-size: 1rem;
   }
 
-  .signin-input {
+  .signup-input {
     font-size: 14px;
     padding: 10px;
   }
 
-  .signin-button {
+  .signup-button {
     font-size: 1rem;
     padding: 10px;
-  }
-
-  .signin-or-login p {
-    font-size: 1rem;
-  }
-
-  .social-icon {
-    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .signin-container{
+  .signup-container {
     width: 90%;
     margin: auto;
   }
-  .signin-left {
+
+  .signup-left {
     padding: 10px;
   }
 
-  .signin-avatar {
+  .signup-avatar {
     width: 60%;
   }
 
-  .signin-right {
+  .signup-right {
     padding: 15px;
   }
 
-  .signin-title {
+  .signup-title {
     font-size: 1.2rem;
   }
 
-  .signin-subtitle {
+  .signup-subtitle {
     font-size: 0.9rem;
   }
 
-  .signin-input {
+  .signup-input {
     font-size: 12px;
     padding: 8px;
     width: 60%;
   }
 
-  .signin-button {
+  .signup-button {
     font-size: 0.9rem;
     padding: 8px;
     margin: auto;
@@ -221,14 +178,7 @@ body {
     margin-top: 2rem;
   }
 
-  .signin-or-login p {
-    font-size: 0.9rem;
-  }
-
-  .social-icon {
-    font-size: 18px;
-  }
-  .signin-options{
+  .signup-acc {
     width: 90%;
   }
 }
